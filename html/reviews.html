@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../scss/css/bootstrap.css" />
+    <link rel="stylesheet" href="../scss/css/styles.css" />
+    <title>Golden Spoon</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-light bg-transparent">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand"
+            style="font-family: 'Benne', serif"
+            href="mainpage.html"
+          >
+            <img
+              src="../img/af319db38bf17429a5b0ff8fd4b2c4c5.jpeg"
+              width="50%"
+              alt="logo"
+            />
+          </a>
+          <h1>Golden Spoon</h1>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon bg-warning"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="mainpage.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="about.html"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="reviews.html"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="sendReview">
+      <h1 style="color: black">Send us a Review</h1>
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label"
+        >Write your Review here:</label
+      >
+      <textarea
+        class="form-control"
+        id="exampleFormControlTextarea1"
+        rows="3"
+      ></textarea>
+      <button id="sendButton" type="button" class="btn btn-outline-warning">
+        Send
+      </button>
+    </div>
+
+    <div class="card w-75 reviewCard">
+      <div class="card-body">
+        <h5 class="card-title">Amazing food and kind waiters</h5>
+        <h5>5/5 ⭐⭐⭐⭐⭐</h5>
+        <p class="card-text">
+          We had lunch there when we were for the first time in Vienna and it
+          was the perfect way to to be introduced to traditional Austrian
+          cuisine. Everything tasted perfect! Definitely recommend!
+        </p>
+      </div>
+    </div>
+
+    <div class="card w-75 reviewCard">
+      <div class="card-body">
+        <h5 class="card-title">Best traditional cuisine in Vienna</h5>
+        <h5>5/5 ⭐⭐⭐⭐</h5>
+        <p class="card-text">
+          Everything was great and everyone was really friendly!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

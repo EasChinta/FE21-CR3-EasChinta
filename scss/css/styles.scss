@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+@media (min-width: 480px) and (max-width: 1200px) {
+}
+
+html,
+body {
+  height: 100%;
+  @import url("https://fonts.googleapis.com/css2?family=Benne&display=swap");
+  font-family: "Benne", serif;
+}
+
+body {
+  background: rgb(124, 93, 57);
+  background: linear-gradient(
+    180deg,
+    rgba(124, 93, 57, 1) 0%,
+    rgba(255, 174, 0, 1) 100%
+  );
+
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+header {
+  margin-bottom: 5vh;
+  background: #201b19;
+}
+
+h1 {
+  color: goldenrod;
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  color: goldenrod !important;
+}
+
+nav {
+  font-size: x-large;
+  font-family: "Benne", serif;
+}
+
+ul {
+  margin: auto;
+  justify-content: space-evenly;
+}
+
+.titles {
+  display: grid;
+  grid-template-rows: 1fr;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#titles {
+  background: #964400;
+  margin-top: 1vh;
+  margin-bottom: 5vh;
+}
+
+#titles2 {
+  background: #964400;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+}
+
+// .card > img {
+//     width: 459vw;
+//     height: 306.98px;
+// }
+
+///////////////// FOOTER /////////////////
+
+.rate {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  height: 9vh;
+}
+.rate:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+}
+.rate:not(:checked) > label {
+  display: flex;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 30px;
+  color: #201b1a;
+}
+.rate:not(:checked) > label:before {
+  content: "★";
+}
+.rate > input:checked ~ label {
+  color: goldenrod;
+}
+.rate:not(:checked) > label:hover {
+  color: goldenrod;
+}
+.rate > input:checked + label:hover {
+  color: goldenrod;
+}
+
+h3 a {
+  display: flex;
+  justify-content: center;
+  color: black !important;
+  text-decoration: none;
+}
+
+h3 a:hover {
+  color: gold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+///////////////// REVIEWS /////////////////
+
+.sendReview {
+  margin-top: 5vh;
+}
+
+.mb-3 {
+  margin-top: 3vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+#sendButton {
+  text-align: center;
+  width: 100%;
+  color: #000;
+}
+
+.reviewCard {
+  margin-top: 10vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom: 5vh;
+}
+
+///////////////// ABOUT /////////////////
+
+#aboutList {
+  color: black !important;
+  text-decoration: black !important;
+  list-style: armenian !important;
+}
+
+section {
+  margin-bottom: 5vh;
+}
