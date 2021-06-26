@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  font-family: "Benne", serif;
 }
 
 html,
@@ -25,6 +26,12 @@ header {
   background: #201b19;
 }
 
+.card {
+  font-size: large;
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
+}
+
 h1 {
   color: goldenrod;
   display: -webkit-box;
@@ -40,7 +47,7 @@ a {
 }
 
 nav {
-  font-size: x-large;
+  font-size: xx-large !important;
   font-family: "Benne", serif;
 }
 
@@ -64,15 +71,22 @@ img {
 }
 
 #titles {
+  font-size: xx-large;
   background: #964400;
   margin-top: 1vh;
   margin-bottom: 5vh;
 }
 
 #titles2 {
+  font-size: xx-large;
   background: #964400;
   margin-top: 10vh;
   margin-bottom: 5vh;
+}
+
+footer {
+  margin-top: 5vh;
+  background-color: #201b19;
 }
 
 .rate {
@@ -103,7 +117,7 @@ img {
   white-space: nowrap;
   cursor: pointer;
   font-size: 30px;
-  color: #201b1a;
+  color: #964400;
 }
 
 .rate:not(:checked) > label:before {
@@ -129,7 +143,7 @@ h3 a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: black !important;
+  color: #964400 !important;
   text-decoration: none;
 }
 
@@ -171,5 +185,72 @@ h3 a:hover {
 
 section {
   margin-bottom: 5vh;
+}
+
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+  .col {
+    width: 50% !important;
+  }
+  .nav-link, .active {
+    margin-left: 2vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 20vw;
+    margin-left: 5vw;
+  }
+  h1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  a {
+    color: goldenrod !important;
+  }
+  nav {
+    font-size: xx-large !important;
+    font-family: "Benne", serif;
+  }
+  ul {
+    margin: auto !important;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+@media screen and (min-width: 1600px) and (min-width: 1920px) {
+  .name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 20vw;
+    margin-left: 18vw;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin-right: 20vw;
+    margin-left: 18vw;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

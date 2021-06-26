@@ -2,15 +2,18 @@
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  font-family: "Benne", serif;
 }
 
-@media (min-width: 480px) and (max-width: 1200px) {
-}
+@import url("https://fonts.googleapis.com/css2?family=Benne&display=swap");
+
+
+
+///////////////// MAIN /////////////////
 
 html,
 body {
   height: 100%;
-  @import url("https://fonts.googleapis.com/css2?family=Benne&display=swap");
   font-family: "Benne", serif;
 }
 
@@ -31,6 +34,12 @@ header {
   background: #201b19;
 }
 
+.card {
+  font-size: large;
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
+}
+
 h1 {
   color: goldenrod;
   display: flex;
@@ -42,7 +51,7 @@ a {
 }
 
 nav {
-  font-size: x-large;
+  font-size: xx-large !important;
   font-family: "Benne", serif;
 }
 
@@ -62,23 +71,26 @@ img {
 }
 
 #titles {
+  font-size: xx-large;
   background: #964400;
   margin-top: 1vh;
   margin-bottom: 5vh;
 }
 
 #titles2 {
+  font-size: xx-large;
   background: #964400;
   margin-top: 10vh;
   margin-bottom: 5vh;
 }
 
-// .card > img {
-//     width: 459vw;
-//     height: 306.98px;
-// }
 
 ///////////////// FOOTER /////////////////
+
+footer {
+  margin-top: 5vh;
+  background-color: #201b19;
+}
 
 .rate {
   display: flex;
@@ -97,7 +109,7 @@ img {
   white-space: nowrap;
   cursor: pointer;
   font-size: 30px;
-  color: #201b1a;
+  color: #964400;
 }
 .rate:not(:checked) > label:before {
   content: "★";
@@ -115,7 +127,7 @@ img {
 h3 a {
   display: flex;
   justify-content: center;
-  color: black !important;
+  color: #964400 !important;
   text-decoration: none;
 }
 
@@ -160,4 +172,77 @@ h3 a:hover {
 
 section {
   margin-bottom: 5vh;
+}
+
+///////////////// TABLET /////////////////
+
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+  .col {
+    width: 50% !important;
+  }
+ 
+  // h1 {
+  //   position: absolute;
+  //   left: 39vw;
+  //   margin-right: 10vw;
+  //   margin-top: 5vh !important;
+  // }
+
+  .nav-link, .active {
+    margin-left: 2vw;
+  }
+
+
+
+
+}
+///////////////// TABLET /////////////////
+
+
+@media screen and (min-width: 1200px) {
+  header {
+    display: flex;
+    align-items: center;
+  }
+  .name {
+    display: flex;
+    margin-right: 20vw;
+    margin-left: 5vw;
+  }
+
+  h1 {
+    display: flex;
+  }
+
+  a {
+    color: goldenrod !important;
+  }
+
+  nav {
+    font-size: xx-large !important;
+    font-family: "Benne", serif;
+  }
+
+  ul {
+    margin: auto !important;
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (min-width: 1600px) and (min-width: 1920px) {
+  .name {
+    display: flex;
+    margin-right: 20vw;
+    margin-left: 18vw;
+  }
+
+}
+
+@media screen and (min-width: 1600px) {
+  .name {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-right: 20vw;
+    margin-left: 18vw;
+  }
 }

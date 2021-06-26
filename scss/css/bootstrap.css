@@ -3487,6 +3487,7 @@ textarea.form-control-lg {
     left: 0 /* rtl:ignore */;
   }
 
+
   .dropdown-menu-sm-end {
     --bs-position: end;
   }
@@ -3499,6 +3500,7 @@ textarea.form-control-lg {
   .dropdown-menu-md-start {
     --bs-position: start;
   }
+
   .dropdown-menu-md-start[data-bs-popper] {
     right: auto /* rtl:ignore */;
     left: 0 /* rtl:ignore */;
