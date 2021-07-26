@@ -17,7 +17,7 @@
           <a
             class="navbar-brand"
             style="font-family: 'Benne', serif"
-            href="mainpage.html"
+            href="index.html"
           >
             <img
               src="../img/af319db38bf17429a5b0ff8fd4b2c4c5.jpeg"
@@ -43,7 +43,7 @@
                 <a
                   class="nav-link active"
                   aria-current="page"
-                  href="mainpage.html"
+                  href="index.html"
                   >Home</a
                 >
               </li>
@@ -56,7 +56,7 @@
                 <a
                   class="nav-link active"
                   aria-current="page"
-                  href="contact.html"
+                  href="reviews.html"
                   >Contact</a
                 >
               </li>
@@ -66,56 +66,45 @@
       </nav>
     </header>
 
-    <main>
-      <section style="text-align: center; font-size: x-large">
-        <h1>Impressum:</h1>
-        <br />
+    <div class="sendReview">
+      <h1 style="color: black">Send us a Review</h1>
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label"
+        >Write your Review here:</label
+      >
+      <textarea
+        class="form-control"
+        id="exampleFormControlTextarea1"
+        rows="3"
+      ></textarea>
+      <button id="sendButton" type="button" class="btn btn-outline-warning">
+        Send
+      </button>
+    </div>
 
-        <p>
-          Restaurant Zur Goldenen Kugel <br />
-          Inh. Christian Berger
+    <div class="card w-75 reviewCard">
+      <div class="card-body">
+        <h5 class="card-title">Amazing food and kind waiters</h5>
+        <h5>5/5 ⭐⭐⭐⭐⭐</h5>
+        <p class="card-text">
+          We had lunch there when we were for the first time in Vienna and it
+          was the perfect way to to be introduced to traditional Austrian
+          cuisine. Everything tasted perfect! Definitely recommend!
         </p>
+      </div>
+    </div>
 
-        <p>
-          Lazarettgasse 6 <br />
-          1090 Wien
+    <div class="card w-75 reviewCard">
+      <div class="card-body">
+        <h5 class="card-title">Best traditional cuisine in Vienna</h5>
+        <h5>5/5 ⭐⭐⭐⭐</h5>
+        <p class="card-text">
+          Everything was great and everyone was really friendly!
         </p>
+      </div>
+    </div>
 
-        <p>
-          Telefon:
-          <a
-            style="text-decoration: blue !important; color: blue !important"
-            href="#"
-          >
-            01 / 405 83 63 </a
-          ><br />
-          Fax:
-          <a
-            style="text-decoration: blue !important; color: blue !important"
-            href=""
-            >01 / 405 83 63 4
-          </a>
-        </p>
-
-        <p>
-          Website:
-          <a
-            style="text-decoration: blue !important; color: blue !important"
-            href="https://www.zurgoldenenkugel.at/"
-          >
-            www.ZurGoldenenKugel.at </a
-          ><br />
-          E-Mail:
-          <a
-            style="text-decoration: blue !important; color: blue !important"
-            href="https://www.zurgoldenenkugel.at/"
-            href="#"
-          >
-            Lokal@ZurGoldenenKugel.at
-          </a>
-        </p>
-      </section>
-    </main>
 
 
     <footer>
@@ -144,6 +133,9 @@
      
 
     </footer>
+
+
+    
 
     <script src="../js/code.js"></script>
     <link
